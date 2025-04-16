@@ -1,0 +1,20 @@
+1st Program Wap to print non vowels in the given string
+word=input("Enter the word: ")
+vowels="aeiouAEIOU"
+nonvowels=""
+for i in word:
+    if i not in vowels:
+        nonvowels+=i
+
+print(nonvowels)
+
+2nd Program Wap to print vowels count in the given string
+
+word=input("Enter the word: ")
+vowels="aeiouAEIOU"
+count=0
+for i in word:
+    if i  in vowels:
+        count+=1
+
+print(f"total no of vowels are {count}")
