@@ -1,0 +1,32 @@
+Task :WAP to remove spaces from the given string and print the result
+
+input: Enter a string: IBM Wipro TCS
+Output: IBMWiproTCS
+
+word=input("Enter the word: ")
+str1=""
+for i in word:
+    if i!=" ":
+        str1+=i
+print(str1)
+
+
+
+2) WAP to check whether vowels are more or consonants are more.
+input: Enter a string: Google
+Output: Both are equal
+
+input: IBM
+output: Consonants are more
+
+word=input("Enter the word: ")
+vowels="aeiouAEIOU"
+vc=0
+cc=0
+for i in word:
+    if (i>="a" and i<="z") or (i>="A" and i<="Z"):
+        if i in vowels:
+            vc+=1
+        else:
+            cc+=1
+print("Vowels are more" if vc>cc else "Consonants are more" if vc<cc else "Both are equal")
