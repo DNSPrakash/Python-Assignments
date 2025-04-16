@@ -1,0 +1,48 @@
+Problem Statement: "Given a string, check if the string is palindrome or not."  A string is said to be palindrome if the reverse of the string is the same as the string.
+
+Examples:
+
+Example 1:
+Input: Str =  “ABCDCBA”
+Output: Palindrome
+Explanation: String when reversed is the same as string.
+
+Example 2:
+Input: Str = “TAKE U FORWARD”
+Output: Not Palindrome
+Explanation: String when reversed is not the same as string.
+
+str=input("Enter the Word: ")
+print("Palindrome") if str==str[::-1] else print("Not palindrome")
+
+
+
+Problem Statement: Given a string, write a program to count the number of vowels, consonants, and spaces in that string.
+
+Examples:
+
+Example 1:
+Input: string str=”Take u forward is Awesome”
+Output: 
+Vowels: 10
+Consonants: 11
+White spaces: 4
+
+word=input("Enter the Sentence: ")
+countv=0
+countc=0
+spaces=0
+for i in word:
+    if i in "aeiouAEIOU":
+        countv+=1
+    elif (i>="a" and i<="z") or (i>="A" and i<="Z"):
+        countc+=1
+    elif i==" ":
+        spaces+=1
+print(f"Vowels:{countv}\nConsonents:{countc}\nWhite Spaces:{spaces}")
+
+
+
+
+
+
