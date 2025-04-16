@@ -1,3 +1,12 @@
+1) Problem statement:
+WAP to read numbers which are not commonly divisible by 5 and 10.
+
+input: 
+Enter a number: 15
+Enter a number: 18
+Enter a number: 44
+Enter a number: 10
+
 num=int(input("Enter a number "))
 while num%5!=0 or num%10!=0:
     num=int(input("Enter a number : "))
