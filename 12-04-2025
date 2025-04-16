@@ -1,0 +1,42 @@
+Task : 1)
+Problem statement: Program to print maximum odd digit in the given number
+
+Test Case-1:
+input: Enter a number: 5788
+output: 7 is the max odd 
+
+Test Case-2:
+input: Enter a number: 680
+output: There is no odd numbers
+
+num=input("enter the number: ")
+maxodd=0
+for i in range(0,len(num)):
+    if int(num[i])%2!=0:
+        if int(num[i])>maxodd:
+            maxodd=int(num[i])
+
+print(f"Max odd is {maxodd}" if maxodd>0 else "There is no odd number")
+
+
+2) 
+Problem statement: Program to print count of special characters in the given string
+
+Test Case-1:
+input: Welcome@John!
+output: @1 
+
+Test Case-2:
+input: support@gmail.com
+output: @.
+
+str1=input("Enter the string: ")
+sc=""
+numbers="1234567890"
+for i in str1:
+    if (i>="a" and i<="z") or (i>="A" and i<="Z") or i in numbers or i==" ":
+        pass
+    else:
+        sc+=i
+print(sc)
+
