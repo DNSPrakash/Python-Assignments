@@ -1,7 +1,6 @@
 Task : WAP to print the min prime in the given number
 input: 10 13 20 23 17 30
 output: Minimum prime: 13
-
 num=input("Enter the numbers: ").split( )
 minprime=float('inf')
 for i in num:
@@ -14,3 +13,25 @@ for i in num:
             if no<minprime:
                 minprime=no
 print("Minimum prime:",minprime)
+
+
+
+WAP to print the sum of min prime and max prime
+input: 10 13 20 23 17 30
+output: Sum of max and min prime: 36
+
+num=input("Enter the numbers: ").split( )
+minprime=float('inf')
+maxprime=float('-inf')
+for i in num:
+    no=int(i)
+    if no>1:
+        for j in range(2,(no//2)+1):
+            if no%j==0:
+                break
+        else:
+            if no<minprime:
+                minprime=no
+            if no>maxprime:
+                maxprime=no
+print("Sum of max and min prime:",minprime+maxprime)
