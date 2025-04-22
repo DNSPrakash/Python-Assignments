@@ -1,0 +1,16 @@
+Task : WAP to print the min prime in the given number
+input: 10 13 20 23 17 30
+output: Minimum prime: 13
+
+num=input("Enter the numbers: ").split( )
+minprime=float('inf')
+for i in num:
+    no=int(i)
+    if no>1:
+        for j in range(2,(no//2)+1):
+            if no%j==0:
+                break
+        else:
+            if no<minprime:
+                minprime=no
+print("Minimum prime:",minprime)
