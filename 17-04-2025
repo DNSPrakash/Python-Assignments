@@ -1,0 +1,19 @@
+Task :WAP to print non primes in the given number
+
+input : Enter a number: 589
+output: Non Primes: 8 9
+
+input: Enter a number: 733
+output: There are no non primes
+
+nums=input("Enter a number: ")
+print(f"Non Primes:",end=" ")
+for i in nums:
+    num=int(i)
+    if num>1:
+        for j in range(2,(num//2)+1):
+            if num%j==0:
+                print(num,end=" ")
+                break
+        else:
+            print("There are no non primes")
