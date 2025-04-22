@@ -1,0 +1,13 @@
+Task :WAP to reverse the words in the given string ?
+
+Test case-1:
+input: I am going home
+output: home going am I
+
+Test case-2:
+input: This is a laptop
+output: laptop a is This
+
+strs=input('Enter the strings: ').split( )
+for i in strs[-1::-1]:
+    print(i,end=" ")
