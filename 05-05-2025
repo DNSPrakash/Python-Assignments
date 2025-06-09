@@ -1,0 +1,23 @@
+Task : 1) WAP to print the dictionary items in which the the key starts with a letter 't'
+
+input: The original dictionary : {'tough': 1, 'to': 2, 'do': 3, 'todays': 4, 'work': 5}
+Output:
+Filtered dictionary keys are : {'tough': 1, 'to': 2, 'todays': 4}
+
+n=int(input("Enter size of dict: "))
+dict1={input():input() for i in range(n)}
+outdict={}
+for i in dict1.keys():
+    if i[0]=="T" or i[0]=="t":
+        outdict[i]=dict1[i]
+print(outdict)
+
+
+2) Python program to find the sum of all items in a dictionary
+
+input: {'a': 100, 'b': 200, 'c': 300}
+output: 600
+
+n=int(input("Enter size of dict: "))
+dict1={input():int(input()) for i in range(n)}
+print(sum(dict1.values()))
