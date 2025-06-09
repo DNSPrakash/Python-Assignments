@@ -1,0 +1,32 @@
+Topic :String methods
+Programs on string related to replace, split, concatenation
+Task : WAP to print all the uppercase letters first followed by lowercase letters in the given string
+input: Great Learning
+Output: GLreatearning
+
+
+WAP to print words with even lengths
+input: This is a python language
+output: This is python language
+
+
+Uppercase letters first print and then lower case
+
+str1=input("Enter the string: ")
+str2=""
+cap=""
+for i in str1:
+    if (i>="A" and i<="Z"):
+        cap+=i
+    elif i==" ":
+        continue
+    else:
+        str2+=i
+print(cap+str2)
+
+even length word printing 
+
+str1=input("Enter the string: ").split( )
+for i in str1:
+    if len(i)%2==0:
+        print(i,end=" ")
