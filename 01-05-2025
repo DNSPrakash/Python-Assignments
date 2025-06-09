@@ -1,0 +1,37 @@
+Task : WAP to check whether a number is fibonacci number or not 
+input: Enter a number: 8
+output: It is a Fibonacci number
+input: Enter a number: 10
+output: No it is not a Fib number
+
+num=int(input())
+a=0
+b=1
+while a<num:
+    a,b=b,a+b
+if num==a:
+    print("It is a Fibanoci Number")
+else:
+    print("No it is a fibanoci number")
+
+
+
+# # WAP to print sum of fib numbers in the given numbers
+# # input: 10 8 18 1 2
+# # output: 11
+list1=[int(i) for i in input().split()]
+max=max(list1)
+fibl=[]
+a,b=0,1
+fibl.append(a)
+fibl.append(b)
+sum=0
+for i in range(max):
+    a,b=b,a+b
+    fibl.append(a)
+    fibl.append(b)
+for i in list1:
+    if i in fibl:
+        sum+=i
+print(sum)
+
