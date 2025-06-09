@@ -1,0 +1,27 @@
+Task :1) Program to rearrange all the non zeroes to the starting of the list and zeroes to the end of list
+input: 10 5 0 30 0
+output: 10 5 30 0 0
+list1=[int(i) for i in input().split()]
+for i in list1:
+    if i==0:
+        list1.remove(0)
+        list1.append(0)
+print(*list1)
+
+
+2) Program to print LCM of given numbers using while loop
+input: 2 8 4
+output: LCM : 8
+
+list1=[int(i) for i in input().split()]
+for i in range(len(list1)-1):
+    a=list1[i]
+    b=list1[i+1]
+    j=max(a,b)
+    while True:
+        if j%a==0 and j%b==0:
+            list1[i+1]=j
+            break
+        else:
+            j+=1
+print(list1[-1])
