@@ -1,0 +1,20 @@
+Problem Statement: Find lcm of two numbers
+Example 1:
+Input: num1 = 4,num2 = 8
+Output: 8
+
+Example 2:
+Input: num1 = 3,num2 = 6
+Output: 6
+
+num1=int(input())
+num2=int(input())
+maxn=max(num1,num2)
+i=1
+while True:
+    lcm=maxn*i
+    if lcm%num1==0 and lcm%num2==0:
+        print(lcm)
+        break
+    else:
+        i+=1
